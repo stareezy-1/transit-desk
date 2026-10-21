@@ -135,7 +135,7 @@ See the [complete implementation video script](docs/video-script.md), [assessmen
 
 ## Delivery status
 
-Public source: [stareezy-1/transit-desk](https://github.com/stareezy-1/transit-desk). The repository includes a [complete timed video script](docs/video-script.md) and [main-flow recording outline](docs/demo-guide.md). Recording and submitting the demo video, and public application deployment, remain separate delivery steps.
+Public source: [stareezy-1/transit-desk](https://github.com/stareezy-1/transit-desk). The repository includes a [complete timed video script in English](docs/video-script.md), its [Indonesian narration](docs/video-script-id.md) and [main-flow recording outline](docs/demo-guide.md). Recording and submitting the demo video, and public application deployment, remain separate delivery steps.
 
 ## Repeatable assessment audit
 

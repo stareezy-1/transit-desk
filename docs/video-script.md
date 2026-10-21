@@ -4,6 +4,8 @@ Target duration: **9 minutes 30 seconds**, including clicks and short pauses. Sp
 
 Repository: https://github.com/stareezy-1/transit-desk
 
+Indonesian narration: [video-script-id.md](video-script-id.md).
+
 This is a ready-to-read script and recording plan. It is not a recorded or submitted video.
 
 ## Before recording
