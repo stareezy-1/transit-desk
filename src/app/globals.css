@@ -1,0 +1,173 @@
+@import 'tailwindcss';
+@import '@fontsource/space-grotesk/latin-400.css';
+@import '@fontsource/space-grotesk/latin-500.css';
+@import '@fontsource/space-grotesk/latin-600.css';
+@import '@fontsource/geist-mono/latin-400.css';
+@import '@fontsource/geist-mono/latin-500.css';
+@theme {
+  --font-sans: 'Space Grotesk', sans-serif;
+  --font-mono: 'Geist Mono', monospace;
+  --color-canvas: #f4f1e9;
+  --color-surface: #faf8f2;
+  --color-ink: #252b28;
+  --color-muted: #666d66;
+  --color-line: #d8d9ce;
+  --color-accent: #a84a2d;
+  --color-accent-soft: #f1e3d8;
+  --color-road: #dadfd4;
+  --color-paper: #fcfaf4;
+  --animate-enter: enter 180ms ease-out;
+  --animate-soft-pulse: soft-pulse 3s ease-in-out infinite;
+  @keyframes enter {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes soft-pulse {
+    50% {
+      opacity: 0.45;
+    }
+  }
+}
+@layer base {
+  html {
+    color-scheme: light;
+    scroll-behavior: smooth;
+  }
+  body {
+    margin: 0;
+    background: var(--color-canvas);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  button,
+  a,
+  input,
+  select {
+    -webkit-tap-highlight-color: transparent;
+  }
+  button:not(:disabled),
+  select {
+    cursor: pointer;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+  }
+  ::selection {
+    background: var(--color-accent);
+    color: var(--color-canvas);
+  }
+}
+.vehicle-map {
+  height: 100%;
+  width: 100%;
+  font-family: var(--font-sans);
+}
+.inline-icon {
+  display: inline-block;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+.page-slot {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.skip-link {
+  position: fixed;
+  left: 16px;
+  top: -100px;
+  z-index: 100;
+  padding: 12px 20px;
+  background: var(--color-surface);
+  border-radius: 8px;
+}
+.skip-link:focus {
+  top: 12px;
+}
+@media (max-width: 640px) {
+  .desktop-break {
+    display: none;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
+.error-page {
+  max-width: 720px;
+  margin: 15vh auto;
+  padding: 24px;
+}
+.error-page h1 {
+  font-size: 36px;
+  letter-spacing: -0.04em;
+}
+.error-page p {
+  margin: 20px 0;
+  color: var(--color-muted);
+}
+.error-page a,
+.error-page button {
+  display: inline-block;
+  border: 1px solid var(--color-line);
+  border-radius: 8px;
+  padding: 12px 20px;
+  background: var(--color-surface);
+}
+
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --color-canvas: #18191c;
+  --color-surface: #212226;
+  --color-ink: #efeff0;
+  --color-muted: #b0b1b8;
+  --color-line: #3b3c43;
+  --color-accent: #e8ad8c;
+  --color-accent-soft: #332a28;
+  --color-road: #303137;
+  --color-paper: #a4a5ad;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme]) {
+    color-scheme: dark;
+    --color-canvas: #18191c;
+    --color-surface: #212226;
+    --color-ink: #efeff0;
+    --color-muted: #b0b1b8;
+    --color-line: #3b3c43;
+    --color-accent: #e8ad8c;
+    --color-accent-soft: #332a28;
+    --color-road: #303137;
+    --color-paper: #a4a5ad;
+  }
+}
+.fleet-section {
+  scroll-margin-top: 24px;
+}
+.vehicle-ticket {
+  border-left: 3px solid var(--color-line);
+}
+.vehicle-ticket:hover {
+  border-left-color: var(--color-accent);
+}
+.vehicle-map .leaflet-control-zoom a {
+  min-width: 44px;
+  min-height: 44px;
+  line-height: 44px;
+}
+@media (max-height: 600px) {
+  .filter-help {
+    display: none;
+  }
+}

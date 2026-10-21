@@ -1,0 +1,412 @@
+.bus-scene {
+  --bus-orange: #d16540;
+  --bus-orange-front: #ad482e;
+  --bus-cream: #ede2ca;
+  position: relative;
+  min-width: 0;
+  margin: 0;
+}
+.bus-scene-top,
+.bus-scene-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  font: 9px var(--font-mono);
+  color: var(--color-muted);
+  letter-spacing: 0.06em;
+}
+.bus-scene-top {
+  padding: 12px 0;
+  border-top: 1px solid var(--color-line);
+  text-transform: uppercase;
+}
+.bus-scene-mark {
+  color: var(--color-accent);
+}
+.bus-illustration {
+  display: block;
+  width: 112%;
+  height: auto;
+  margin: 0 -6%;
+  overflow: visible;
+}
+.bus-scene-bottom {
+  padding: 10px 0;
+  border-top: 1px solid var(--color-line);
+}
+.bus-motion-control {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  min-height: 44px;
+  padding: 0 8px;
+  color: var(--color-ink);
+}
+.bus-motion-control:hover {
+  color: var(--color-accent);
+}
+.scene-grid {
+  stroke: var(--color-line);
+  stroke-width: 0.6;
+  opacity: 0.5;
+}
+.road-plane {
+  fill: var(--color-road);
+}
+.curb-line {
+  stroke: var(--color-ink);
+  opacity: 0.2;
+  stroke-width: 2;
+}
+.lane-lines {
+  stroke: var(--color-paper);
+  stroke-width: 3;
+}
+.bus-shadow {
+  fill: var(--color-ink);
+  opacity: 0.09;
+}
+.bus-roof {
+  fill: var(--bus-cream);
+  stroke: #aa9a81;
+  stroke-width: 1;
+}
+.bus-side {
+  fill: var(--bus-orange);
+  stroke: #a14b30;
+  stroke-width: 1;
+}
+.bus-front {
+  fill: var(--bus-orange-front);
+  stroke: #923c27;
+  stroke-width: 1;
+}
+.bus-window {
+  fill: #303b42;
+}
+.window-dividers {
+  stroke: #d9c9a8;
+  stroke-width: 5;
+}
+.window-glints {
+  stroke: #a2bab2;
+  stroke-width: 2;
+  opacity: 0.55;
+}
+.bus-display {
+  fill: #1d2825;
+}
+.bus-destination {
+  fill: #f3d59c;
+  font: 8px var(--font-mono);
+  letter-spacing: 0.9px;
+}
+.bus-stripe {
+  fill: var(--bus-cream);
+}
+.bus-trim {
+  fill: #33363a;
+}
+.door-frame {
+  fill: #222f2c;
+}
+.bus-door {
+  fill: #dcbf8e;
+}
+.bus-headlights {
+  fill: #fff0be;
+}
+.mirror-arm {
+  stroke: #2a2d32;
+  stroke-width: 4;
+}
+.bus-badge-line {
+  stroke: #f6e4c2;
+  stroke-width: 4;
+}
+.bus-wordmark {
+  fill: #fbefda;
+  font: 600 11px var(--font-sans);
+  letter-spacing: 1.1px;
+}
+.bus-fleet-number {
+  fill: #f7e7cf;
+  font: 7px var(--font-mono);
+}
+.bus-tire {
+  fill: #24272a;
+  stroke: #111a17;
+  stroke-width: 2;
+}
+.bus-hub {
+  fill: #bcbfb2;
+  stroke: #64736b;
+  stroke-width: 3;
+}
+.bus-wheel-spokes {
+  stroke: #5c6962;
+  stroke-width: 2;
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: wheel-travel 12s linear infinite;
+}
+.roof-hatch {
+  fill: #c6bfae;
+}
+.roof-vents {
+  stroke: #999b8b;
+  stroke-width: 2;
+}
+.stop-pole {
+  stroke: var(--color-muted);
+  stroke-width: 4;
+}
+.stop-sign {
+  fill: var(--color-ink);
+}
+.stop-icon {
+  stroke: var(--color-canvas);
+  stroke-width: 2;
+}
+.stop-icon-fill {
+  fill: var(--color-canvas);
+}
+.passenger-fill {
+  fill: var(--color-accent);
+}
+.passenger-stroke {
+  stroke: var(--color-accent);
+  stroke-width: 4;
+  stroke-linecap: round;
+}
+.dimension-line {
+  stroke: var(--color-muted);
+  stroke-width: 0.6;
+}
+.scene-caption {
+  fill: var(--color-muted);
+  font: 7px var(--font-mono);
+  letter-spacing: 1px;
+}
+.bus-body-motion {
+  animation: bus-arrival 12s cubic-bezier(0.45, 0, 0.2, 1) infinite;
+}
+.road-marks {
+  animation: road-travel 12s linear infinite;
+}
+.bus-door-left {
+  animation: door-left 12s ease-in-out infinite;
+}
+.bus-door-right {
+  animation: door-right 12s ease-in-out infinite;
+}
+.bus-passenger {
+  animation: passenger-board 12s ease-in-out infinite;
+}
+@keyframes bus-arrival {
+  0%,
+  100% {
+    transform: translate(-8px, -1px);
+  }
+  18%,
+  32% {
+    transform: translate(1px, 0);
+  }
+  42%,
+  74% {
+    transform: translate(0, 0);
+  }
+  88% {
+    transform: translate(-5px, -1px);
+  }
+}
+@keyframes wheel-travel {
+  0% {
+    transform: rotate(0deg);
+  }
+  38% {
+    transform: rotate(720deg);
+  }
+  75% {
+    transform: rotate(720deg);
+  }
+  100% {
+    transform: rotate(1080deg);
+  }
+}
+@keyframes road-travel {
+  0% {
+    transform: translate(45px, 8px);
+    opacity: 0;
+  }
+  6% {
+    opacity: 1;
+  }
+  38%,
+  75% {
+    transform: translate(-25px, -4px);
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-75px, -13px);
+    opacity: 0;
+  }
+}
+@keyframes door-left {
+  0%,
+  38%,
+  78%,
+  100% {
+    transform: translate(0, 0);
+  }
+  46%,
+  70% {
+    transform: translate(-15px, -2px);
+  }
+}
+@keyframes door-right {
+  0%,
+  38%,
+  78%,
+  100% {
+    transform: translate(0, 0);
+  }
+  46%,
+  70% {
+    transform: translate(15px, 2px);
+  }
+}
+@keyframes passenger-board {
+  0%,
+  32% {
+    opacity: 0;
+    transform: translate(25px, -12px);
+  }
+  42%,
+  48% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  65%,
+  100% {
+    opacity: 0;
+    transform: translate(-180px, 15px);
+  }
+}
+.bus-scene[data-paused='true'] * {
+  animation-play-state: paused !important;
+}
+@media (prefers-reduced-motion: reduce) {
+  .bus-scene * {
+    animation: none !important;
+  }
+  .bus-passenger {
+    opacity: 0;
+  }
+  .bus-motion-control {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .bus-illustration {
+    width: 108%;
+    margin-left: -4%;
+    margin-right: -4%;
+  }
+}
+
+/* Panoramic study plate: annotations frame the vehicle instead of a split marketing hero. */
+.bus-scene {
+  display: grid;
+  grid-template-columns: minmax(90px, 1fr) minmax(0, 640px) minmax(90px, 1fr);
+  align-items: center;
+  border-top: 1px solid var(--color-line);
+}
+.bus-scene-top {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: start;
+  margin-top: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  border: 0;
+  line-height: 1.7;
+}
+.bus-illustration {
+  grid-column: 2;
+  grid-row: 1;
+  width: 100%;
+  margin: -12px 0 -18px;
+}
+.bus-scene-bottom {
+  grid-column: 3;
+  grid-row: 1;
+  align-self: end;
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 14px;
+  border: 0;
+  line-height: 1.7;
+  text-align: right;
+}
+@media (max-width: 767px) {
+  .bus-scene {
+    grid-template-columns: 1fr 1fr;
+  }
+  .bus-scene-top {
+    grid-column: 1;
+    grid-row: 1;
+    margin-top: 8px;
+    flex-direction: row;
+    gap: 8px;
+    font-size: 8px;
+  }
+  .bus-scene-bottom {
+    grid-column: 2;
+    grid-row: 1;
+    margin: 8px 0 0;
+    align-self: start;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 8px;
+  }
+  .bus-scene-bottom > span {
+    max-width: 90px;
+  }
+  .bus-illustration {
+    grid-column: 1/-1;
+    grid-row: 2;
+    width: 100%;
+    margin: -8px 0 0;
+  }
+}
+@media (max-width: 767px) {
+  .bus-scene-top {
+    display: none;
+  }
+  .bus-illustration {
+    grid-row: 1;
+    margin: 0;
+  }
+  .bus-scene-bottom {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    align-self: auto;
+    justify-content: space-between;
+    margin: 0;
+    text-align: left;
+    font-size: 10px;
+  }
+  .bus-scene-bottom > span {
+    max-width: none;
+  }
+}

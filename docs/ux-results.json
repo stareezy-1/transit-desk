@@ -1,0 +1,134 @@
+{
+  "date": "2026-10-15",
+  "method": "In-app Chromium interaction checks with controlled fixture data",
+  "records": [
+    {
+      "width": 320,
+      "theme": "light",
+      "passed": true,
+      "checks": [
+        "result navigation",
+        "mobile page jump",
+        "modal focus return",
+        "selected filter chips",
+        "chip removal focus",
+        "44px controls",
+        "reflow",
+        "guide navigation"
+      ]
+    },
+    {
+      "width": 320,
+      "theme": "dark",
+      "passed": true,
+      "checks": [
+        "result navigation",
+        "mobile page jump",
+        "modal focus return",
+        "selected filter chips",
+        "chip removal focus",
+        "44px controls",
+        "reflow",
+        "guide navigation"
+      ]
+    },
+    {
+      "width": 390,
+      "theme": "light",
+      "passed": true,
+      "checks": [
+        "result navigation",
+        "mobile page jump",
+        "modal focus return",
+        "selected filter chips",
+        "chip removal focus",
+        "44px controls",
+        "reflow",
+        "guide navigation"
+      ]
+    },
+    {
+      "width": 390,
+      "theme": "dark",
+      "passed": true,
+      "checks": [
+        "result navigation",
+        "mobile page jump",
+        "modal focus return",
+        "selected filter chips",
+        "chip removal focus",
+        "44px controls",
+        "reflow",
+        "guide navigation"
+      ]
+    },
+    {
+      "width": 768,
+      "theme": "light",
+      "passed": true,
+      "checks": [
+        "result navigation",
+        "mobile page jump",
+        "modal focus return",
+        "selected filter chips",
+        "chip removal focus",
+        "44px controls",
+        "reflow",
+        "guide navigation"
+      ]
+    },
+    {
+      "width": 768,
+      "theme": "dark",
+      "passed": true,
+      "checks": [
+        "result navigation",
+        "mobile page jump",
+        "modal focus return",
+        "selected filter chips",
+        "chip removal focus",
+        "44px controls",
+        "reflow",
+        "guide navigation"
+      ]
+    },
+    {
+      "width": 1440,
+      "theme": "light",
+      "passed": true,
+      "checks": [
+        "result navigation",
+        "mobile page jump",
+        "modal focus return",
+        "selected filter chips",
+        "chip removal focus",
+        "44px controls",
+        "reflow",
+        "guide navigation"
+      ]
+    },
+    {
+      "width": 1440,
+      "theme": "dark",
+      "passed": true,
+      "checks": [
+        "result navigation",
+        "mobile page jump",
+        "modal focus return",
+        "selected filter chips",
+        "chip removal focus",
+        "44px controls",
+        "reflow",
+        "guide navigation"
+      ]
+    }
+  ],
+  "additionalChecks": {
+    "shortViewport": {
+      "width": 390,
+      "height": 500,
+      "filteredOptionFullyVisible": true
+    },
+    "resetPreservesPageSize": 24
+  }
+}

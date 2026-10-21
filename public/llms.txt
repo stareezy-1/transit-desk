@@ -1,0 +1,19 @@
+# Transit Desk
+
+> An independent MBTA fleet monitoring dashboard built for a frontend technical assessment. Not an official MBTA or Transjakarta service.
+
+## Pages
+- [Fleet overview](/): Vehicle positions, multi-select route and trip filters, pagination, and vehicle details.
+- [Field guide](/guide): Human-readable explanations, frequently asked questions, and original sources.
+
+## Data provenance
+- Vehicle, route, and trip data: https://api-v3.mbta.com
+- API documentation: https://api-v3.mbta.com/docs/swagger/index.html
+- Map data: OpenStreetMap contributors, https://www.openstreetmap.org/copyright
+
+## Interpretation
+- Geographic coverage: Greater Boston, Massachusetts, USA.
+- Dashboard refresh: every 30 seconds while active. Vehicle timestamps come from the source feed and may be older.
+- Display timezone: America/New_York (Eastern Time).
+- Status values describe position relative to stops, not on-time performance.
+- Live vehicle counts and coordinates are transient. Cite the current feed and observation time when discussing them.

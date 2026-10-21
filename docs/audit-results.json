@@ -1,0 +1,143 @@
+{
+  "date": "2026-10-15",
+  "browser": "Chromium through Codex in-app browser",
+  "environment": "Isolated Next.js app and loopback fixture API",
+  "viewports": [
+    {
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "width": 390,
+      "height": 900
+    }
+  ],
+  "records": [
+    {
+      "theme": "light",
+      "width": 1440,
+      "group": "core",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "group": "core",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "group": "core",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "group": "core",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "group": "loading-errors-empty-missing-position",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "group": "loading-errors-empty-missing-position",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "group": "loading-errors-empty-missing-position",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "group": "loading-errors-empty-missing-position",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "group": "automatic-refresh-and-page-clamp",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "group": "automatic-refresh-and-page-clamp",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "group": "automatic-refresh-and-page-clamp",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "group": "automatic-refresh-and-page-clamp",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "group": "card-fields-system-theme-guide-disclosures-static-fallback",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "group": "card-fields-system-theme-guide-disclosures-static-fallback",
+      "passed": true
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "group": "card-fields-system-theme-guide-disclosures-static-fallback",
+      "passed": true
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "group": "card-fields-system-theme-guide-disclosures-static-fallback",
+      "passed": true
+    }
+  ],
+  "liveVerification": {
+    "layouts": [
+      {
+        "theme": "light",
+        "width": 1440,
+        "navigation": true,
+        "overflow": false
+      },
+      {
+        "theme": "dark",
+        "width": 1440,
+        "navigation": true,
+        "overflow": false
+      },
+      {
+        "theme": "light",
+        "width": 390,
+        "navigation": true,
+        "overflow": false
+      },
+      {
+        "theme": "dark",
+        "width": 390,
+        "navigation": true,
+        "overflow": false
+      }
+    ],
+    "routeOptions": 25,
+    "tripOptions": 25
+  }
+}
